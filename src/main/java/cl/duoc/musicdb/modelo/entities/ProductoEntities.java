@@ -9,6 +9,13 @@ import lombok.Data;
 @Table(name = "producto")
 public class ProductoEntities {
     
-    
+    @Id 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int idProducto;
+    private String nomprod;
+    private String marca;
+    private int valor;
+    private int cantidad;
+    private int idcategoria;
 
 }
