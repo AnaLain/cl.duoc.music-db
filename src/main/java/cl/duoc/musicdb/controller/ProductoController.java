@@ -11,7 +11,7 @@ import cl.duoc.musicdb.modelo.entities.ProductoEntities;
 import cl.duoc.musicdb.service.ProductoService;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/productoentities")
 public class ProductoController {
     
     @Autowired
