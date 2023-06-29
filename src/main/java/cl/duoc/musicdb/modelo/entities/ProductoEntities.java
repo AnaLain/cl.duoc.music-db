@@ -18,4 +18,7 @@ public class ProductoEntities {
     private int cantidad;
     private int idcategoria;
 
+    @ManyToOne (fetch = FetchType. EAGER, cascade = CascadeType. All)
+    @JoinColumn(name = "id_categoria", referencedColumnName = "Id", insertable = false, updatable = false)
+
 }
