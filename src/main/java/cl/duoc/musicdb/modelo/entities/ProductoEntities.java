@@ -11,16 +11,25 @@ public class ProductoEntities {
     
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name ="idproducto")
     private int idProducto;
-    private String nomprod;
-    private String marca;
-    private int valor;
-    private int cantidad;
-    private int idcategoria;
 
+    @Column(name = "nomprod")
+    private String nomProd;
+
+    @Column(name = "marca")
+    private String marca;
+    @Column(name = "valor")
+    private int valor;
+    @Column(name = "cantidad")
+    private int cantidad;
+    @Column(name = "idcategoria")
+    private int idCategoria;
+
+    /*
     @ManyToOne (fetch = FetchType. EAGER, cascade = CascadeType. All)
     @JoinColumn(name = "id_categoria", referencedColumnName = "Id", insertable = false, updatable = false)
     @JsonBackReference
-    
+     */
 
 }

@@ -11,13 +11,13 @@ import cl.duoc.musicdb.modelo.entities.ProductoEntities;
 import cl.duoc.musicdb.service.ProductoService;
 
 @RestController
-@RequestMapping("/productoentities")
+@RequestMapping("/producto-db")
 public class ProductoController {
     
     @Autowired
     ProductoService productoService;
 
-    @GetMapping(path = "/productoEntities", produces = {"application/json"})
+    @GetMapping(path = "/producto", produces = {"application/json"})
     public List<ProductoEntities> getAll(){
         return productoService.getAll();
     }
